@@ -1,33 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file -->
-</head>
-<body>
-    <header>
-        <h1>Welcome to Your Dashboard</h1>
-        <nav>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
+        <title>Dashboard</title>
+        <link rel = "stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1> Welcome to your dashboard</h1>
+            <nav>
+                <!-- adding the navigation links needed -->
             <ul>
-                <li><a href="/leaderboard">Leaderboard</a></li>
-                <li><a href="/course-content">Course Content</a></li>
-                <!-- Add more navigation links as needed -->
+                <li><a href = "/leaderboard">leaderboard</a></li>
+                <li><a href = "/course-content.html">Course content</a></li>
             </ul>
+          
         </nav>
-    </header>
-    <main>
-        <section class="welcome-message">
-            <h2>Hello, <span id="user-fullname"></span>!</h2>
-            <p>Welcome to your personalized dashboard.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Your LMS</p>
-    </footer>
+        </header>
+        <main>
+            <section class = "welcome-message">
+                <h2> Hello, <span id = "user-fullname"></span>!</h2>
+                <p>Welcome to your personalized dashboard</p>
+            </section>
 
-    <!-- Include your client-side JavaScript file -->
-    <script src="script.js"></script>
-</body>
+            <label> SELECT YOUR PREFERED COURSES</label>
+            <section>
+                <section>
+                    <h2> Select your courses</h2>
+                    <form action= "dashboard.html" class="subject" id = "subjectForm">
+                        <input type="checkbox" name="subject" value="Science">Biology<br>
+                        <input type="checkbox" name="subject" value="Science">Physics<br>
+                        <input type="checkbox" name="subject" value="Science">Mathematics<br>
+                        <input type="checkbox" name="subject" value="Science">Chemistry<br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                        
+                </section>
+                <nav class="selection">
+                  
+                <ul class=" courses">
+                    <li> <a href = "course-content.html"> Biology </a></li>
+                    <li> <a href = "course-content.html"> Physics</a></li>
+                    <li> <a href = "course-content.html"> Mathematics</a></li>
+                    <li> <a href = "course-content.html">Chemistry</a></li>
+                </ul>
+           
+                </nav>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 your LMS</p>
+        </footer>
+       <!--  including your client-side javaScript file -->  
+        <script type ="module" src = "add_course.js"></script>
+    </body>
 </html>

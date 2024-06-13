@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
+        <link rel = "stylesheet" href = "style.css">
+        <script type = "module" src = "register.js" defer></script>
+    <body>
+   
+        <main>
+            <form action="sign_uppage.html" class="form">
+                <h1>Sign Up</h1>
+                <div  id = "signUpMessage"class="messageDiv" style=" display: none;"></div>
+            
+                <input type="FirstName" id="FirstName" name="FirstName" required placeholder="First name">
+                <input type="LastName" id="LastName" name="LastName" required placeholder="Last name">
+                <input type="text" id="email" name="email"  required placeholder="Email">
+                <input type="password" id="password" name="password" required placeholder="Password">
+                <button type="submit" id = "submit">Create account</button>
+            
+                <p>Already have an account? <a href="/frontend/dashboard.html">Sign in</a></p>
+<!-- <div class = "container" id ="sign In">
+<h1 class="form-title"> Sign In</h1>
+<form method="post" action = "">
+    <div id = "signInMessage" class ="messageDiv" style ="display: none;"></div>
+    <input type="text" id="email" name="email"  required>
+                <input type="password" id="password" name="password" required>
+</form>
+
+</div> -->
+            </form>
+
+        </main>
+
+    </body>
+</html>
